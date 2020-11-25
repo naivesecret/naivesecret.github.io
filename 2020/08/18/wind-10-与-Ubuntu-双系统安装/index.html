@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="Alan&#39;s Blog">
 <meta property="og:description" content="装 win 10 简单，装好再后装 linux，磁盘剩余情况为：200G 固态 + 500G 机械。（空间不理想可以在 win 10 的磁盘管理中压缩卷）。 下面开始装 linux： 下载系统镜像在 Ubuntu 官网下载适当的版本，这里以 Ubuntu 20.04 为例。 制作系统盘准备一个空优盘，使用 UltraISO 软件制作系统盘：  在 UltraISO 中打开 系统镜像文件 启动 -&amp;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-11-25T06:06:22.843Z">
+<meta property="og:updated_time" content="2020-11-25T12:31:26.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wind 10 与 Ubuntu 双系统安装">
 <meta name="twitter:description" content="装 win 10 简单，装好再后装 linux，磁盘剩余情况为：200G 固态 + 500G 机械。（空间不理想可以在 win 10 的磁盘管理中压缩卷）。 下面开始装 linux： 下载系统镜像在 Ubuntu 官网下载适当的版本，这里以 Ubuntu 20.04 为例。 制作系统盘准备一个空优盘，使用 UltraISO 软件制作系统盘：  在 UltraISO 中打开 系统镜像文件 启动 -&amp;">
@@ -192,7 +192,7 @@
 <h2 id="制作系统盘"><a href="#制作系统盘" class="headerlink" title="制作系统盘"></a>制作系统盘</h2><p>准备一个空优盘，使用 <a href="https://cn.ultraiso.net/xiazai.html" target="_blank" rel="noopener">UltraISO</a> 软件制作系统盘：</p>
 <ul>
 <li>在 UltraISO 中打开 系统镜像文件</li>
-<li>启动 -&gt; 写入硬盘映像 (-&gt; 格式化) -&gt; 写入</li>
+<li>启动 -&gt; 写入硬盘映像 (-&gt; 格式化) -&gt; 一定要选择和 win10 相同的引导方式(这里选择UEFI) -&gt; 写入</li>
 <li>稍等片刻</li>
 </ul>
 <h2 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h2><p>重启并从优盘启动，开始安装向导，这些都很简单，主要是在安装类型步骤选择“其他”以方便自定义分区大小。以下是我的分配方案（全部为逻辑分区）：</p>
@@ -235,14 +235,8 @@
 <td align="left">500 GB (所有剩余的机械空间)</td>
 <td align="left">机械硬盘</td>
 </tr>
-<tr>
-<td align="left">/boot</td>
-<td align="left">ext4</td>
-<td align="left">2 GB</td>
-<td align="left">固态硬盘</td>
-</tr>
 </tbody></table>
-<p>剩下的就是一路下一步直到安装完毕，重启电脑。</p>
+<p>引导项(启动项)选择装到 <code>/boot</code> 中，剩下的就是一路下一步直到安装完毕，重启电脑。</p>
 <h2 id="选择进入系统"><a href="#选择进入系统" class="headerlink" title="选择进入系统"></a>选择进入系统</h2><p>默认进 win10 ，msi 主板在开机时狂按 <code>F11</code> 会出现可选择进入的系统的列表。</p>
 
         </div>
@@ -252,7 +246,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-11-25T06:06:22.843Z" itemprop="dateUpdated">2020-11-25 14:06:22</time>
+    Last updated: <time datetime="2020-11-25T12:31:26.051Z" itemprop="dateUpdated">2020-11-25 20:31:26</time>
 </span><br>
 
 

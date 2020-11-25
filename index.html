@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Alan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content>
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Alan&#39;s Blog">
+<meta property="og:url" content="http://naivesecret.github.io/index.html">
+<meta property="og:site_name" content="Alan&#39;s Blog">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alan&#39;s Blog">
+    
+        <link rel="alternate" type="application/atom+xml" title="Alan&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Alan</h5>
+          <a href="mailto:wangzijun96@buaa.edu.cn" title="wangzijun96@buaa.edu.cn" class="mail">wangzijun96@buaa.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect active">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect active">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect active">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect active">
+              <a href="https://github.com/naivesecret" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Alan&#39;s Blog</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header index-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Alan&#39;s Blog</h1>
+        <h5 class="subtitle">
+            
+                
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-wind-10-与-Ubuntu-双系统安装"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-08-18 14:33:17" datetime="2020-08-18T06:33:17.000Z"  itemprop="datePublished">2020-08-18</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/08/18/wind-10-与-Ubuntu-双系统安装/">wind 10 与 Ubuntu 双系统安装</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        装 win 10 简单，装好再后装 linux，磁盘剩余情况为：200G 固态 + 500G 机械。（空间不理想可以在 win 10 的磁盘管理中压缩卷）。
+下面开始装 linux：
+下载系统镜像在 Ubuntu 官网下载适当的版本，这里以 Ubuntu 20.04 为例。
+制作系统盘准备一个空优盘，使用 UltraISO 软件制作系统盘：
+
+在 UltraISO 中打开 系统镜像文件
+启动...
+    
+
+        <a href="/2020/08/18/wind-10-与-Ubuntu-双系统安装/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Ubuntu-18-04-chrome-字体修改"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-08-07 17:14:16" datetime="2020-08-07T09:14:16.000Z"  itemprop="datePublished">2020-08-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/08/07/Ubuntu-18-04-chrome-字体修改/">Ubuntu 18.04 chrome 字体修改</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        一直用 mac 浏览网页和 pdf ，配了一台跑代码的台式，Ubuntu 下的 chrome 字体看着实在难受，就好像自己眼花了一样，上网查了一下，找到问题和较为简单的解决方案。
+问题通常情况下，Ubuntu 18.04 下的程序遵循 Gnome Tweaks 下设置的字体渲染配置进行渲染，但 Chrome 不是。原因在于，Chrome 是读取 Linux 系统 fontconfig 配置的...
+    
+
+        <a href="/2020/08/07/Ubuntu-18-04-chrome-字体修改/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Ubuntu-18-04-修改键位映射"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-08-05 22:36:02" datetime="2020-08-05T14:36:02.000Z"  itemprop="datePublished">2020-08-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/08/05/Ubuntu-18-04-修改键位映射/">Ubuntu 18.04 修改键位映射</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。
+首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev
+
+如果是临时交换，则可以编辑一个Xmo...
+    
+
+        <a href="/2020/08/05/Ubuntu-18-04-修改键位映射/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-天才派大星"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-01-20 14:27:17" datetime="2020-01-20T06:27:17.000Z"  itemprop="datePublished">2020-01-20</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂文/">杂文</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/01/20/天才派大星/">天才派大星</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        Patrick SmartPantsDialogue(SpongeBob &amp; Patrick are running through Jellyfish Fields laughing trying to capture jellyfish)
+Patrick: (pokes SpongeBob) You’re it. (both laugh)
+SpongeBob: (pokes Pa...
+    
+
+        <a href="/2020/01/20/天才派大星/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-我善养吾浩然之气"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-01-05 13:51:28" datetime="2020-01-05T05:51:28.000Z"  itemprop="datePublished">2020-01-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂文/">杂文</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/01/05/我善养吾浩然之气/">我善养吾浩然之气</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        &emsp;&emsp;（公孙丑问曰）：“敢问夫子恶乎长？”&emsp;&emsp;曰：“我知言，我善养吾浩然之气。”&emsp;&emsp;“敢问何谓浩然之气？”&emsp;&emsp;曰：“难言也。其为气也，至大至刚，以直养而无害，则塞于天地之间。其为气也，配义与道；无是，馁也。是集义所生者，非义袭而取之也。行有不慊于心，则馁矣。我故曰，告子未尝知义，以其外之也。必有事焉而勿正，心勿忘，...
+    
+
+        <a href="/2020/01/05/我善养吾浩然之气/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书/">读书</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-gromacs-1"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-12-11 21:04:19" datetime="2019-12-11T13:04:19.000Z"  itemprop="datePublished">2019-12-11</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Gromacs/">Gromacs</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/12/11/gromacs-1/">Gromacs-1 安装</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        首先确保安装了最新版的 cmake 以及 gcc 等环境以ubuntu系统为例：
+12sudo apt install gccsudo apt install cmake
+
+从官网获得目标版本的源码包并解压(这里以2019.4为例)12wget http://ftp.gromacs.org/pub/gromacs/gromacs-2019.4.tar.gztar xf gromacs-201...
+    
+
+        <a href="/2019/12/11/gromacs-1/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-关于正义与非正义"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-03-07 21:08:10" datetime="2018-03-07T13:08:10.000Z"  itemprop="datePublished">2018-03-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂文/">杂文</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/03/07/关于正义与非正义/">关于正义与非正义——《理想国》读后感</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        &emsp;&emsp;《理想国》一书涉及死亡、正义、教育、国家政体、民主与独裁等诸多方面的问题，并对每一个问题都进行了深入的探讨。据说为了使这样一本哲学著作能够更加地通俗易懂，书中的语言经过作者柏拉图不下于百遍的修改与雕琢，即便如此，第一遍读完此书，我远不能领会作者想要通过此书想要传达的思想，也许所获不及全部的三成。但是，对于正义与非正义的一篇辩论，倒着实使我陷入沉思并驱使我去寻找答案。&...
+    
+
+        <a href="/2018/03/07/关于正义与非正义/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书/">读书</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-西方哲学述评课程笔记"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-08-11 14:04:10" datetime="2017-08-11T06:04:10.000Z"  itemprop="datePublished">2017-08-11</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/08/11/西方哲学述评课程笔记/">西方哲学述评课程笔记</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        写在前面本来我的选修课学分已经满足毕业要求了，但是我们专业的学费是按照学年收取，反正学费拿不回来了，于是我抱着多学点就多赚点的心态选了这门《西方哲学述评》课。万万没想到，如此有趣的西方哲学史让这个瘦弱不堪，气短而虚的老师讲得连不为学分只因兴趣的我都昏昏欲睡，这也难怪第一节课就只来到了零零星星的二十人左右。罢！罢！罢！既来之则安之。此课程从古希腊讲到黑格尔（后来课程太仓促，启蒙运动之后皆一带而...
+    
+
+        <a href="/2017/08/11/西方哲学述评课程笔记/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书/">读书</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-那一瞬间"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2016-06-01 21:03:30" datetime="2016-06-01T13:03:30.000Z"  itemprop="datePublished">2016-06-01</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/杂文/">杂文</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/06/01/那一瞬间/">那一瞬间</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        ——二十岁的儿童节送给过去的自己
+&emsp;&emsp;从很小的时候，我便经常一个人呆着，而且脑袋里总是想些奇奇怪怪的东西，比如“我是谁？”“我从哪里来？”“要到哪里去？”等等我都想过，其中最神奇且最困扰我的莫过于“我（存）在哪儿”这个问题了。我在某个地方吗？不是，我在我的体内，那我在我身体的那部分呢？心？不是，我不用手摸甚至感觉不到它在跳动；脑袋？脑袋是挺重要，可我同样感觉不到大脑的存在...
+    
+
+        <a href="/2016/06/01/那一瞬间/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+    </ul>
+
+    
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Alan &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://naivesecret.github.io/&title=Alan's Blog&pic=http://naivesecret.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://naivesecret.github.io/&title=Alan's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://naivesecret.github.io/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Alan's Blog&url=http://naivesecret.github.io/&via=http://naivesecret.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://naivesecret.github.io/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxUlEQVR42u3aS27DMAwFwNz/0u7WQGvlkfrABUarwInlcRYERfLzidd1W/cr42/vV8a7LV64uLjT3Gu4nnC/Pz/tVn29px1wcXHPc58ixhiREJN9EgMuLu6budVf5nfh4uL+R27v2JNfwcXFfRs3OfzkqUxe39h4VsPFxZ3g9rZe+3lLfRcXF7fFvVprVeJSfi4uLu4R7qpDTpKazJdZcXFxz3B7TY68Bbt4gAMXF/cIdwzK2x55CSMpeXzZBxcXdzO3d3OC64W/L8ERFxf3OLc3ftE78FQToOh/wsXFXcTdTcmbpvlTcHFxd3OrgayarOQjGuU5EVxc3G3casDqDWytuhcXF/cMN2+H5K9RyK2qFVFcXNyD3KT0ufsIFLV4cXFxj3CrwxPlUYliuCy0WnFxcbdx50NYc+KjyP3j8IOLi7uNO05B8vGsXkkl/5twcXFPcq/iytOgvCTaHLzAxcXdxs1X3pnJEdUSLS4u7kluHryqw1XVBsyyjAwXF3cRd2Ywq/pKM0ETFxf3bdy1TdZmMQUXF/dl3PlKRa+YUt4IFxd3ETc//PQSoGrjZKrJiouLO83thaF8ICMpo8y8MC4u7lLuD1RClYxvFhhLAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '小爷别走呀！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '回来啦!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

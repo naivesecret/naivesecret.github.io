@@ -14,25 +14,25 @@
     
     
     
-    <title>Ubuntu 18.04 修改键位映射 | Alan&#39;s Blog</title>
+    <title>Ubuntu 常见坑位指南 (基于18.04) | Alan&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="新知">
-    <meta name="description" content="众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可以编辑一个Xmodma">
+    <meta name="description" content="1. 键盘键位映射修改众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可">
 <meta name="keywords" content="新知">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 18.04 修改键位映射">
-<meta property="og:url" content="http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/index.html">
+<meta property="og:title" content="Ubuntu 常见坑位指南 (基于18.04)">
+<meta property="og:url" content="http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/index.html">
 <meta property="og:site_name" content="Alan&#39;s Blog">
-<meta property="og:description" content="众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可以编辑一个Xmodma">
+<meta property="og:description" content="1. 键盘键位映射修改众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-11-25T12:31:04.690Z">
+<meta property="og:updated_time" content="2020-11-27T13:14:52.558Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu 18.04 修改键位映射">
-<meta name="twitter:description" content="众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可以编辑一个Xmodma">
+<meta name="twitter:title" content="Ubuntu 常见坑位指南 (基于18.04)">
+<meta name="twitter:description" content="1. 键盘键位映射修改众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 Ctrl 却处在最左下角，尤其是 linux 经常需要使用 Ctrl + Alt + T 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。 首先，如果你想永久修改键位，则可直接更改系统文件1/usr/share/X11/xkb/keycodes/evdev  如果是临时交换，则可">
     
         <link rel="alternate" type="application/atom+xml" title="Alan&#39;s Blog" href="/atom.xml">
     
@@ -113,7 +113,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Ubuntu 18.04 修改键位映射</div>
+        <div class="flex-col header-title ellipsis">Ubuntu 常见坑位指南 (基于18.04)</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -135,7 +135,7 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Ubuntu 18.04 修改键位映射</h1>
+        <h1 class="title">Ubuntu 常见坑位指南 (基于18.04)</h1>
         <h5 class="subtitle">
             
                 <time datetime="2020-08-05T14:36:02.000Z" itemprop="datePublished" class="page-time">
@@ -160,16 +160,16 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#首先，如果你想永久修改键位，则可直接更改系统文件"><span class="post-toc-number">1.</span> <span class="post-toc-text">首先，如果你想永久修改键位，则可直接更改系统文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）"><span class="post-toc-number">2.</span> <span class="post-toc-text">如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后，让生效命令开机执行"><span class="post-toc-number">3.</span> <span class="post-toc-text">最后，让生效命令开机执行</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-键盘键位映射修改"><span class="post-toc-number">1.</span> <span class="post-toc-text">1. 键盘键位映射修改</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#首先，如果你想永久修改键位，则可直接更改系统文件"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">首先，如果你想永久修改键位，则可直接更改系统文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后，让生效命令开机执行"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">最后，让生效命令开机执行</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#chrome-字体修改"><span class="post-toc-number">2.</span> <span class="post-toc-text">chrome 字体修改</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#问题"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#方法"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#命令行挂载与移除移动存储设备"><span class="post-toc-number">3.</span> <span class="post-toc-text">命令行挂载与移除移动存储设备</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#挂载"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">挂载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#卸载"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">卸载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#断电"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">断电</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-Ubuntu-18-04-修改键位映射"
+<article id="post-Ubuntu-常见坑位指南"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Ubuntu 18.04 修改键位映射</h1>
+        <h1 class="post-card-title">Ubuntu 常见坑位指南 (基于18.04)</h1>
         <div class="post-meta">
             <time class="post-time" title="2020-08-05 22:36:02" datetime="2020-08-05T14:36:02.000Z"  itemprop="datePublished">2020-08-05</time>
 
@@ -186,7 +186,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 <code>Ctrl</code> 却处在最左下角，尤其是 linux 经常需要使用 <code>Ctrl + Alt + T</code> 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。</p>
+            <h1 id="1-键盘键位映射修改"><a href="#1-键盘键位映射修改" class="headerlink" title="1. 键盘键位映射修改"></a>1. 键盘键位映射修改</h1><p>众所周知，大小写锁定键处于黄金键位可使用频率很低，而使用频率很高的 <code>Ctrl</code> 却处在最左下角，尤其是 linux 经常需要使用 <code>Ctrl + Alt + T</code> 打开终端，手都快骨折撇断了，所以想把上述两个键位更换位置，于是有了这篇踩坑记。</p>
 <h2 id="首先，如果你想永久修改键位，则可直接更改系统文件"><a href="#首先，如果你想永久修改键位，则可直接更改系统文件" class="headerlink" title="首先，如果你想永久修改键位，则可直接更改系统文件"></a>首先，如果你想永久修改键位，则可直接更改系统文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/X11/xkb/keycodes/evdev</span><br></pre></td></tr></table></figure>
 
 <h2 id="如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）"><a href="#如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）" class="headerlink" title="如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）"></a>如果是临时交换，则可以编辑一个Xmodmap文件，并在终端里执行（建议抄答案）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.Xmodmap</span><br></pre></td></tr></table></figure>
@@ -199,7 +199,32 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmodmap ~/.Xmodmap</span><br></pre></td></tr></table></figure>
 
 <p>即可</p>
-<p><small>本文参考博客<a href="http://coinstechnote.blogspot.com/2018/05/ubuntu1804gnome.html" target="_blank" rel="noopener">钢镚的技术笔记</a></small></p>
+<p><small>键位映射修改参考博客<a href="http://coinstechnote.blogspot.com/2018/05/ubuntu1804gnome.html" target="_blank" rel="noopener">钢镚的技术笔记</a></small><br>&nbsp;<br>&nbsp;</p>
+<h1 id="chrome-字体修改"><a href="#chrome-字体修改" class="headerlink" title="chrome 字体修改"></a>chrome 字体修改</h1><p>一直用 mac 浏览网页和 pdf ，配了一台跑代码的台式，Ubuntu 下的 chrome 字体看着实在难受，就好像自己眼花了一样，上网查了一下，找到问题和较为简单的解决方案。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>通常情况下，Ubuntu 18.04 下的程序遵循 Gnome Tweaks 下设置的字体渲染配置进行渲染，但 Chrome 不是。原因在于，Chrome 是读取 Linux 系统 fontconfig 配置的，默认情况下系统 fontconfig 中没有对字体全局 hint 进行配置，这导致 Chrome 始终以完全 hint 模式对字体进行渲染。思源黑体不自带有 hint 信息，因此经过完全 hint 之后会变得非常丑陋。</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>在 /etc/fonts/ 下创建 local.conf 文件并写入如下内容全局关闭 hint：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&apos;1.0&apos;?&gt;</span><br><span class="line">&lt;!DOCTYPE fontconfig SYSTEM &apos;fonts.dtd&apos;&gt;</span><br><span class="line">&lt;fontconfig&gt;</span><br><span class="line">  &lt;match target=&quot;font&quot;&gt;</span><br><span class="line">    &lt;edit name=&quot;hintstyle&quot; mode=&quot;assign&quot;&gt;</span><br><span class="line">      &lt;const&gt;hintnone&lt;/const&gt;</span><br><span class="line">    &lt;/edit&gt;</span><br><span class="line">  &lt;/match&gt;</span><br><span class="line">&lt;/fontconfig&gt;</span><br></pre></td></tr></table></figure>
+
+<p><small>参考 <a href="https://soulike.tech/article?id=34" target="_blank" rel="noopener">Soulike 的博客</a></small><br>&nbsp;<br>&nbsp;</p>
+<h1 id="命令行挂载与移除移动存储设备"><a href="#命令行挂载与移除移动存储设备" class="headerlink" title="命令行挂载与移除移动存储设备"></a>命令行挂载与移除移动存储设备</h1><h2 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h2><p>首先查看系统磁盘设备信息，并找到待挂载设备文件 (Linux系统中所有设备均被视为文件)，这里以 <code>/dev/sdb1</code> 为例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></table></figure>
+
+<p>创建挂载目录，一般选择挂载在 <code>/mnt</code> 目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /mnt/mydisk</span><br></pre></td></tr></table></figure>
+
+<p>挂载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mount /dev/sdb1 /mnt/mydisk</span><br></pre></td></tr></table></figure>
+
+<p>现在 <code>/mnt/mydisk</code> 下就是移动存储设备的根目录了。</p>
+<h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo umount /mnt/sdb1</span><br><span class="line"># 或</span><br><span class="line">sudo umount /dev/sdb1</span><br></pre></td></tr></table></figure>
+
+<h2 id="断电"><a href="#断电" class="headerlink" title="断电"></a>断电</h2><p>对于移动硬盘，很多时候卸载之后并没有断电，直接拔非常危险(祭奠我第一张装满 1TB 资料的 WD 硬盘)，这时候可以使用断电指令，前提是先卸载。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">udisksctl power-off -b /dev/sdb1</span><br></pre></td></tr></table></figure>
+
+<p>若系统较老，上述指令出错则可尝试以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">udisks --detach /dev/sdb1</span><br></pre></td></tr></table></figure>
+
+<p><small>参考 <a href="https://unix.stackexchange.com/questions/178638/eject-safely-remove-vs-umount" target="_blank" rel="noopener">stackexchange 问答</a></small></p>
 
         </div>
 
@@ -208,12 +233,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-11-25T12:31:04.690Z" itemprop="dateUpdated">2020-11-25 20:31:04</time>
+    Last updated: <time datetime="2020-11-27T13:14:52.558Z" itemprop="dateUpdated">2020-11-27 21:14:52</time>
 </span><br>
 
 
         
-        本文地址：<a href="/2020/08/05/Ubuntu-18-04-修改键位映射/" target="_blank" rel="external">http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/</a>
+        本文地址：<a href="/2020/08/05/Ubuntu-常见坑位指南/" target="_blank" rel="external">http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/</a>
         
     </div>
     
@@ -244,7 +269,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&title=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&pic=http://naivesecret.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&title=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&pic=http://naivesecret.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -254,22 +279,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&title=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&title=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&via=http://naivesecret.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&via=http://naivesecret.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -292,9 +317,9 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2020/08/07/Ubuntu-18-04-chrome-字体修改/" id="post-prev" class="post-nav-link">
+      <a href="/2020/08/18/wind-10-与-Ubuntu-双系统安装/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Ubuntu 18.04 chrome 字体修改</h4>
+        <h4 class="title">wind 10 与 Ubuntu 双系统安装</h4>
       </a>
     </div>
   
@@ -403,7 +428,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&title=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&pic=http://naivesecret.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&title=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&pic=http://naivesecret.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -413,22 +438,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&title=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&title=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu 18.04 修改键位映射》 — Alan's Blog&url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/&via=http://naivesecret.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu 常见坑位指南 (基于18.04)》 — Alan's Blog&url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/&via=http://naivesecret.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://naivesecret.github.io/2020/08/05/Ubuntu-18-04-修改键位映射/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://naivesecret.github.io/2020/08/05/Ubuntu-常见坑位指南/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -439,7 +464,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3a227CQAwFwP7/T9NXpJbk+LLQSpOnqIWws0j2YvvrK74eT9fzX67vXz3h+vU///vzXcsXHh4e3mDp14voLfF6g/LtSNbzy9Pw8PDwjvFefUASrKsff418tdA8/eDh4eH9fV4S6JNwn5yN8fDw8P4vb7Kg/L5X8sDDw8N7Dy8vN+TH32o6uU4Yx2steHh4eDHvPSF+9/5Ifw8PDw9v3FXvNcPyNlieDHoXHh4e3gleHnCrx9ZJwyx5Zj4choeHh3eONx8I6JVi82GC3hrw8PDwdnmTcF8N1jfhO04qyRYsZDM8PDy8Vle92sSKDrgxJn/yTRkCDw8Pb5XXC/o5cgLL1xY1xvDw8PBWeXkLKl90tbiQM8qJCg8PD+8ArxqmqwE6efK8GRalBzw8PLwxLwnK1bCep5bqqb9amMDDw8M7wTsRlHtDANXtKCQJPDw8vFVeL9QW5rny8F3cjsLQFR4eHt4qrxeI8wGpapOst5XR0AAeHh7eEm/yuGoDLD9GR99JMuCFh4eHd4DXG8PKm1i9hln1s5pIPDw8vBZvMtI0D+L5obz3Xjw8PLxzvEnRIc85+TG92n67GbrCw8PDW+VNygGTReQF394XgIeHh/dO3qT9Pxk16B2dIxgeHh7eYV6vfZVvUx76H8XrZoV4eHh4q7y8eDop5laTwSRFlV+Kh4eH1+IljGrxIi8ozJ92k/Hw8PDwjvF6YXrSysqP4M3mHB4eHt4qr/eDf37Uzu8naQYPDw/vBC+/eo2r+cBWshELFx4eHl6RNw/lveRRBVcbZnh4eHineSeGAPID91Y2a5Zx8fDw8D7Eu35lXubIX7PWAMPDw8P7EG9yNO9VEspDV3h4eHirvOrAU3J0njCqh+ybxICHh4e3yqv+yD8X9MuFhq1eHx4eHl7692+rdoi9vQ2qTgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvUlEQVR42u3a0Y4aMQwFUP7/p6nUt2qBuTdOhpV65glV05CTlWJj+/GIn+ffJ/n88/n5ZvL+u3ceJx48PDy8pa0nm/v87+1BfGYnR5wcEB4eHt45Xrvc5xWSiz75ruQQLyx4eHh4X+UlyW5+fX8G5N+Ch4eH9/t5n0sDeUjIkclx4+Hh4d3Py4uw7ftrZdz5HvDw8PDO8fY2wO75/LX+Hh4e3n/Pe5ZPlMKORwrWml4v1sfDw8M7wJuXStsUPC/Rtily8YsBDw8Pb8DbVWLIt94OWrWH+M9nPDw8vGO89vJdG43Kr/61kYUXe8DDw8O7hZckuPOywnzAK2q24eHh4R3j5e2l/FKOLu6yY9UeGR4eHt49vCRUfN7upDCxeR08PDy8Y7xJ8ylKbQdl4jzk1MUIPDw8vCXePM3NS7d52ywfPigSazw8PLwbeW1jrG5TleWP/Pjw8PDwzvHa8al8QCq5vvcOLuDh4eHdw5u3nZL0d1LgyAPPRTECDw8PbytvLTle69HnY17tTt4GBjw8PLxNvLURgckX56FlMriAh4eHd443KSLkIaEtKLTFjujHAB4eHt4mXtvaz0cK1gDtSMHFCnh4eHgHePN0eTKqla8wCRt4eHh4e3nFZMG4yLs2lDAqfODh4eEd4K1dzW1I2FXGTYLKxegAHh4e3piX/+e2MDEPCXlqftHfw8PDw7uRl6fd+UG0aXoeSC56enh4eHibeGstqHyFdut1oaE9XDw8PLwx71k+7ZDBJPC0ifuLNfHw8PAO8OaJb1uczQ+uTdzXggoeHh7eGq8uj25tkk0OqPjL4OHh4R3gtTWMvK0VzS8MItjFgeLh4eF9lbf25qScsWGHeHh4eL+M1ybHbYrcBo+3xQg8PDy8A7y1YsQc04551T8A8PDw8A7w2lpovtF2tTZg1Aw8PDy8Ke8PbHEDJya5LpAAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 

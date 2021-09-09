@@ -1,5 +1,5 @@
 ---
-title: wind 10 与 Ubuntu 双系统安装
+title: win 10 与 Ubuntu 双系统安装
 date: 2020-08-18 14:33:17
 tags: 新知
 categories: Linux

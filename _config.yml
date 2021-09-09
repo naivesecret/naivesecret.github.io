@@ -1,105 +1,131 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# ===========================================
+# Site Information Settings
+# ===========================================
 
-# Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+# Site creation time
+since: 2015
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+# Custom your favicon.ico in `site/source`
+favicon: /favicon.ico
 
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+# Set feed link (false | default | your feed link)
+# false: disable
+# default: use `atom.xml`, generator for `hexo-generator-feed`
+rss: default
 
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
+# ===========================================
+# Menu Settings
+# ===========================================
+menu:
+  Home: /
+  # Archives: /archives/
+  # Tags: /tags/
+  # Categories: /categories/
+  # About: /about/
+
+# ===========================================
+# Theme Settings
+# ===========================================
+# color: default | mint green | cobalt blue | hot pink | dark violet
+color: default
+
+# default page mode: default | archives
+mode: default
+
+toc: true
+
+# jQuery fancybox
+fancybox: true
+
+# LaTeX support (via MathJax)
+latex: false
+
+copyright:
   enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
+  # https://creativecommons.org/
+  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+
+reward:
   enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  qrCode:
+    wechat:
+    alipay:
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
+# ===========================================
+# Social links Settings
+# ===========================================
+social:
+  email: wangzijun96@gmail.com
+  stack-overflow:
+  twitter:
+  facebook:
+  linkedin:
+  google:
+  github: https://github.com/naivesecret
+  weibo:
+  zhihu:
+  douban:
+  pocket:
+  tumblr:
+  instagram:
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# ===========================================
+# Third Party Services Settings
+# ===========================================
 
-# Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+# LeanCloud
+leancloud:
+  app_id:
+  app_key:
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+# Baidu Analytics
+baidu_analytics:
+# Baidu Verification
+baidu_verification:
 
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
+# Google Analytics
+google_analytics:
+# Google Verification
+google_verification:
 
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# Disqus
+disqus_shortname:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: landscape
+#Changyan
+changyan:
+  appid:
+  appkey:
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
+#LiveRe
+livere_datauid:
+
+# Gitalk
+# Demo: https://gitalk.github.io
+# https://github.com/gitalk/gitalk
+gitalk:
+  enable: false
+  github_id: GitHub repo owner
+  repo: GitHub repo
+  client_id: GitHub Application Client ID
+  client_secret: GitHub Application Client Secret
+  admin_user: GitHub repo owner and collaborators, only these guys can initialize github issues
+  distraction_free_mode: true # Facebook-like distraction free mode
+  # Gitalk's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
+  language: zh-CN
+
+# utterances
+# Docs: https://utteranc.es/
+# Tips: Make sure you have installed [utterances app](https://github.com/apps/utterances) in your repo
+utterances:
+  enable: false
+  repo: owner/repo # Repository
+  issueTerm: title  # Blog post ↔️ issue mapping: pathname | url | title | og:title
+  theme: github-light # Theme: github-light | github-dark | github-dark-orange | icy-dark | dark-blue | photon-dark
+  label: utterances # Issue label
+
+# ===========================================
+# Version
+# ===========================================
+version: 2.11.0
